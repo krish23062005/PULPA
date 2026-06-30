@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 overflow-x-hidden;
+    /* Vibrant Chaos Gradient Background */
+    background: radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 165, 0, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 234, 0, 0.4) 0%, transparent 50%),
+                #FF2E93;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+@layer utilities {
+  .btn-neo {
+    @apply inline-block font-space font-bold uppercase px-6 py-3 rounded-full border-2 border-pulpa-navy shadow-neo transition-neo hover:translate-y-1 hover:translate-x-1 hover:shadow-neo-sm;
+  }
+  
+  .card-neo {
+    @apply border-[4px] border-pulpa-navy rounded-xl shadow-neo transition-neo;
+  }
+
+  .text-outline {
+    text-shadow: 
+      -1px -1px 0 #161124,  
+       1px -1px 0 #161124,
+      -1px  1px 0 #161124,
+       1px  1px 0 #161124,
+       2px 2px 0 #161124;
+  }
+  
+  .marquee-container {
+    @apply overflow-hidden whitespace-nowrap bg-pulpa-navy py-4 border-y-4 border-pulpa-navy;
+  }
+}
