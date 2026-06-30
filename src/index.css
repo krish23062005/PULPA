@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  html, body {
     @apply m-0 p-0 overflow-x-hidden;
+    max-width: 100vw;
     /* Vibrant Chaos Gradient Background */
     background: radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.4) 0%, transparent 40%),
                 radial-gradient(circle at 90% 80%, rgba(255, 165, 0, 0.4) 0%, transparent 40%),

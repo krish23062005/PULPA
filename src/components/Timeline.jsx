@@ -37,7 +37,7 @@ const timelineData = [
     year: '2024',
     emoji: '🚀',
     title: 'National Scale',
-    story: 'Expanded from local farmers markets to nationwide shipping with 50,000+ bottles delivered. 5 signature flavors. Zero preservatives. 100% PULPA.',
+    story: 'We expanded from local farmers markets to nationwide shipping with 50,000+ bottles delivered. 5 signature flavors. Zero preservatives. 100% PULPA.',
     color: 'bg-pulpa-yellow',
   }
 ];
@@ -82,7 +82,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative">
+    <section id="story" ref={sectionRef} className="relative">
       <div
         ref={triggerRef}
         className="relative w-full h-screen overflow-hidden bg-pulpa-hotpink border-y-4 border-pulpa-navy"
@@ -112,22 +112,19 @@ const Timeline = () => {
           {timelineData.map((item, index) => (
             <div
               key={index}
-              className="shrink-0 flex flex-col items-center mx-6 md:mx-10 relative"
+              className="shrink-0 flex flex-col items-center mx-6 md:mx-10 relative pt-16"
               style={{ width: '360px' }}
             >
-              {/* Timeline dot */}
-              <div className="w-8 h-8 rounded-full border-[4px] border-pulpa-navy bg-pulpa-yellow shadow-neo-sm absolute top-1/2 -translate-y-1/2 -mt-[180px] md:-mt-[200px] z-10" />
-
-              {/* Year badge */}
-              <div className="mb-6 mt-2">
-                <span className="inline-block font-space font-bold text-sm md:text-base uppercase px-4 py-1.5 rounded-full border-[3px] border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm">
+              {/* Year badge — sits ON the timeline line */}
+              <div className="absolute top-1/2 -translate-y-[calc(50%+80px)] z-10">
+                <span className="inline-block font-space font-bold text-sm md:text-base uppercase px-5 py-2 rounded-full border-[4px] border-pulpa-navy bg-pulpa-yellow text-pulpa-navy shadow-[6px_6px_0px_#161124]">
                   {item.year}
                 </span>
               </div>
 
               {/* Card */}
               <div
-                className={`${item.color} p-6 md:p-8 rounded-2xl border-[4px] border-pulpa-navy shadow-[12px_12px_0px_#161124] transition-all duration-300 hover:scale-[1.03] hover:-rotate-1 hover:bg-pulpa-yellow w-full`}
+                className={`${item.color} p-6 md:p-8 rounded-2xl border-[4px] border-pulpa-navy shadow-[12px_12px_0px_#161124] transition-all duration-300 hover:scale-[1.03] hover:-rotate-1 hover:bg-pulpa-yellow w-full h-[280px] md:h-[300px]`}
               >
                 <div className="text-4xl md:text-5xl mb-3">{item.emoji}</div>
                 <h3 className="font-hanken font-black text-2xl md:text-3xl text-pulpa-navy mb-3 leading-none tracking-tight">

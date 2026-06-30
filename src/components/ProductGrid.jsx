@@ -62,7 +62,7 @@ const ProductGrid = () => {
       volume: "500ml",
       pack: "6-pack",
       price: "$24",
-      desc: "Florida valencias, ginger, a dirty splash of lemon. Tastes like sunrise yelling.",
+      desc: "Florida Valencias, ginger, and a dirty splash of lemon. Tastes like the sunrise yelling.",
       image: "/03-pulpa-splash.jpg",
       bgColor: "bg-[#FFE6C7]" 
     },

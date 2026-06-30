@@ -14,7 +14,14 @@
     <meta name="description" content="High-energy cold-pressed juice for a loud life.">
   </head>
   <body class="bg-pulpa-hotpink text-pulpa-navy font-hanken antialiased overflow-x-hidden selection:bg-pulpa-yellow selection:text-pulpa-navy">
-    <div id="root"></div>
+    <div id="root">
+      <script>
+        // Prevent the pink flash before React mounts the preloader
+        if (!sessionStorage.getItem('hasSeenPreloader')) {
+          document.write('<div style="position:fixed;top:0;left:0;width:100%;height:100%;background-color:#161124;z-index:99999;"></div>');
+        }
+      </script>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

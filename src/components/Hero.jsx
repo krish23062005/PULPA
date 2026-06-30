@@ -88,8 +88,11 @@ const Hero = () => {
             <h1 className="font-anton text-[100px] md:text-[180px] lg:text-[220px] text-pulpa-blue uppercase tracking-tighter m-0 p-0">
               LOUD
             </h1>
-            <h1 className="font-anton text-[100px] md:text-[180px] lg:text-[220px] text-pulpa-navy uppercase tracking-tighter m-0 p-0 ml-1 md:ml-2">
+            <h1 className="font-anton text-[100px] md:text-[180px] lg:text-[220px] text-pulpa-yellow uppercase tracking-tighter m-0 p-0 ml-1 md:ml-2 relative" style={{ WebkitTextStroke: '6px #161124', color: '#FFEA00' }}>
               LIFE.
+              <span className="absolute left-0 top-0 text-pulpa-navy -z-10 translate-x-[4px] translate-y-[4px] md:translate-x-[8px] md:translate-y-[8px] webkit-text-stroke-0" style={{ WebkitTextStroke: '0px' }}>
+                LIFE.
+              </span>
             </h1>
           </div>
         </div>
@@ -103,12 +106,12 @@ const Hero = () => {
         
         {/* Buttons */}
         <div className="flex flex-row flex-wrap justify-center gap-4 mt-10 mb-16 md:mb-24">
-          <button className="inline-block font-space font-bold uppercase px-8 py-4 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy pointer-events-auto">
+          <a href="#shop" className="inline-block font-space font-bold uppercase px-8 py-4 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy pointer-events-auto">
             Order a 6-pack &rarr;
-          </button>
-          <button className="inline-block font-space font-bold uppercase px-8 py-4 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy pointer-events-auto">
+          </a>
+          <a href="#story" className="inline-block font-space font-bold uppercase px-8 py-4 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy pointer-events-auto">
             Read the story
-          </button>
+          </a>
         </div>
 
         {/* Hero Image Section */}

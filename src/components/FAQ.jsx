@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 const faqData = [
   {
@@ -49,7 +50,32 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
 };
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
+  const wtfRef = useRef(null);
+  const factsRef = useRef(null);
+
+  useEffect(() => {
+    // Floating animation for "WTF?" header
+    gsap.to(wtfRef.current, {
+      y: -8,
+      rotation: -4,
+      duration: 1.5,
+      yoyo: true,
+      repeat: -1,
+      ease: 'sine.inOut',
+    });
+
+    // Floating animation for "(What To know Facts)" subtitle (slightly offset timing/movement)
+    gsap.to(factsRef.current, {
+      y: 6,
+      rotation: -1,
+      duration: 2,
+      yoyo: true,
+      repeat: -1,
+      ease: 'sine.inOut',
+      delay: 0.2,
+    });
+  }, []);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? -1 : index);
@@ -58,12 +84,13 @@ const FAQ = () => {
   return (
     <section id="faq" className="py-24 px-4 md:px-12 w-full flex flex-col items-center justify-center bg-pulpa-hotpink border-y-4 border-pulpa-navy relative overflow-hidden z-10">
       <div className="max-w-4xl mx-auto w-full relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="font-anton text-5xl md:text-7xl uppercase text-pulpa-navy leading-tight transform -rotate-2">
+        <div className="text-center mb-16 relative">
+          <h2 ref={wtfRef} className="font-anton text-5xl md:text-7xl uppercase text-pulpa-navy leading-tight transform -rotate-2 inline-block">
             WTF?
           </h2>
-          <p className="font-bricolage text-2xl md:text-4xl text-pulpa-yellow mt-4 font-bold inline-block transform -rotate-2">
-            (What To know Facts)
+          <br/>
+          <p ref={factsRef} className="font-bricolage text-2xl md:text-4xl text-pulpa-yellow mt-4 font-bold inline-block transform -rotate-2">
+            (What To Know Facts)
           </p>
         </div>
 

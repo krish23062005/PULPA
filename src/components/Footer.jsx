@@ -8,19 +8,10 @@ const Footer = () => {
         
         {/* Brand Section */}
         <div className="flex flex-col max-w-sm">
-          <h2 className="font-anton text-5xl md:text-7xl text-pulpa-yellow mb-4">PULPA</h2>
+          <h2 className="font-anton text-5xl md:text-7xl text-pulpa-yellow mb-4 inline-block transition-all duration-300 hover:scale-110 hover:-rotate-3 cursor-pointer transform -rotate-2 tracking-tighter">PULPA</h2>
           <p className="font-hanken text-lg mb-6 text-gray-300">
             Loud juice for a loud life. Cold-pressed chaos in a bottle. Keep it raw, keep it real.
           </p>
-          <div className="flex gap-4">
-            {/* Social Icons Placeholder */}
-            <div className="w-10 h-10 rounded-full border-2 border-pulpa-mint flex items-center justify-center hover:bg-pulpa-mint transition-colors cursor-pointer group">
-              <span className="font-space text-pulpa-mint group-hover:text-pulpa-footer font-bold">IG</span>
-            </div>
-            <div className="w-10 h-10 rounded-full border-2 border-pulpa-mint flex items-center justify-center hover:bg-pulpa-mint transition-colors cursor-pointer group">
-              <span className="font-space text-pulpa-mint group-hover:text-pulpa-footer font-bold">TT</span>
-            </div>
-          </div>
         </div>
 
         {/* Links Grid */}
@@ -28,23 +19,23 @@ const Footer = () => {
           
           <div className="flex flex-col gap-3">
             <h4 className="font-space font-bold text-pulpa-mint mb-2 uppercase">Shop</h4>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">All Flavors</a>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Subscriptions</a>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Merch</a>
+            <a href="#shop" className="font-hanken hover:text-pulpa-yellow transition-colors">All Flavors</a>
+            {/* <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Subscriptions</a>
+            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Merch</a> */}
           </div>
 
           <div className="flex flex-col gap-3">
             <h4 className="font-space font-bold text-pulpa-mint mb-2 uppercase">About</h4>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Our Ethos</a>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Sourcing</a>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Press</a>
+            <a href="#ethos" className="font-hanken hover:text-pulpa-yellow transition-colors">Our Ethos</a>
+            {/* <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Sourcing</a>
+            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Press</a> */}
           </div>
 
           <div className="flex flex-col gap-3">
-            <h4 className="font-space font-bold text-pulpa-mint mb-2 uppercase">Support</h4>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">FAQ</a>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Contact</a>
-            <a href="#" className="font-hanken hover:text-pulpa-yellow transition-colors">Shipping</a>
+            <h4 className="font-space font-bold text-pulpa-mint mb-2 uppercase">Talk to us</h4>
+            <a href="mailto:chaos@pulpajuice.com" className="font-hanken hover:text-pulpa-yellow transition-colors">chaos@pulpajuice.com</a>
+            <a href="tel:+1800555JUICE" className="font-hanken hover:text-pulpa-yellow transition-colors">1-800-555-JUICE</a>
+            <a href="#faq" className="font-hanken hover:text-pulpa-yellow transition-colors">FAQ</a>
           </div>
           
         </div>

@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex gap-4 pointer-events-auto">
-        <a href="#flavors" className="inline-block font-space font-bold uppercase px-4 py-2 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy">
+        <a href="#shop" className="inline-block font-space font-bold uppercase px-4 py-2 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy">
           Flavors
         </a>
         <a href="#ethos" className="inline-block font-space font-bold uppercase px-4 py-2 rounded-full border-2 border-pulpa-navy bg-pulpa-navy text-white shadow-neo-sm transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-none hover:bg-pulpa-yellow hover:text-pulpa-navy">
@@ -20,7 +20,7 @@ const Navbar = () => {
 
       <div className="pointer-events-auto">
         <a href="#shop" className="btn-neo bg-pulpa-navy text-white transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:bg-pulpa-yellow hover:text-pulpa-navy">
-          Shop Now
+          FRIDGE
         </a>
       </div>
     </nav>

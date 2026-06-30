@@ -38,7 +38,7 @@ const BrandEthos = () => {
     <section id="ethos" className="py-24 px-4 md:px-12 w-full flex flex-col items-center justify-center bg-pulpa-hotpink border-y-4 border-pulpa-navy relative overflow-hidden">
       
       {/* Background elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-pulpa-yellow opacity-40 blur-2xl rounded-full"></div>
+      <div className="absolute top-10 left-10 w-48 h-48 bg-white opacity-20 blur-3xl rounded-full mix-blend-overlay"></div>
       <div className="absolute bottom-10 right-10 w-48 h-48 bg-pulpa-mint opacity-40 blur-3xl rounded-full"></div>
 
       <div ref={textRef} className="max-w-4xl mx-auto text-center z-10 relative">
@@ -59,7 +59,7 @@ const BrandEthos = () => {
         <div className="mt-16 flex flex-col items-center gap-8">
           <a 
             href="#shop" 
-            className="inline-block bg-pulpa-yellow text-pulpa-navy font-anton text-3xl md:text-5xl uppercase px-12 md:px-16 py-5 md:py-7 rounded-full border-[5px] border-pulpa-navy shadow-[12px_12px_0px_#161124] transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-[4px_4px_0px_#161124] hover:translate-x-2 hover:translate-y-2 cursor-pointer tracking-tight"
+            className="inline-block bg-white text-pulpa-navy font-anton text-3xl md:text-5xl uppercase px-12 md:px-16 py-5 md:py-7 rounded-full border-[5px] border-pulpa-navy shadow-[12px_12px_0px_#161124] transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-[4px_4px_0px_#161124] hover:translate-x-2 hover:translate-y-2 hover:bg-pulpa-yellow cursor-pointer tracking-tight"
           >
             Join the Chaos
           </a>
