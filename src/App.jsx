@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import Marquee from './components/Marquee';
 import ProductGrid from './components/ProductGrid';
 import BrandEthos from './components/BrandEthos';
+import Timeline from './components/Timeline';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import { Agentation } from 'agentation';
 
@@ -22,9 +24,12 @@ function App() {
         
         <Marquee text="LOUD JUICE • LOUD LIFE • 100% RAW AF •" />
         
+        <Timeline />
+        
         <BrandEthos />
       </main>
 
+      <FAQ />
       <Footer />
       </div>
       {/* Vite uses import.meta.env.DEV instead of process.env.NODE_ENV */}

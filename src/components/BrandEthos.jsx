@@ -55,12 +55,17 @@ const BrandEthos = () => {
           We're here to wake you up.
         </p>
         
-        <div className="mt-16 relative w-full h-[300px] flex justify-center items-center pointer-events-none">
-          <img 
-            src="/a_single_3d_floating_pickle_minimalist_clean_lighting_soft_mint_green.png" 
-            alt="Floating Pickle" 
-            className="h-full object-contain drop-shadow-[12px_12px_0px_#161124] transform rotate-12"
-          />
+        {/* CTA Section */}
+        <div className="mt-16 flex flex-col items-center gap-8">
+          <a 
+            href="#shop" 
+            className="inline-block bg-pulpa-yellow text-pulpa-navy font-anton text-3xl md:text-5xl uppercase px-12 md:px-16 py-5 md:py-7 rounded-full border-[5px] border-pulpa-navy shadow-[12px_12px_0px_#161124] transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-[4px_4px_0px_#161124] hover:translate-x-2 hover:translate-y-2 cursor-pointer tracking-tight"
+          >
+            Join the Chaos
+          </a>
+          <p className="font-space font-bold text-sm md:text-base text-pulpa-navy uppercase tracking-widest opacity-80">
+            10,000+ people already ditched boring juice
+          </p>
         </div>
       </div>
     </section>
