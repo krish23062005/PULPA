@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
+import splashImg from '../assets/03-pulpa-splash.jpg';
+import blueberryImg from '../assets/blueberry.png';
+import kiwiImg from '../assets/kiwi.png';
+import mangoImg from '../assets/mango.png';
+import strawberryImg from '../assets/strawberry.png';
+
 const Hero = () => {
   const containerRef = useRef(null);
   const floatingTextRef = useRef(null);
@@ -9,11 +15,11 @@ const Hero = () => {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
   const images = [
-    '/03-pulpa-splash.jpg',
-    '/blueberry.png',
-    '/kiwi.png',
-    '/mango.png',
-    '/strawberry.png'
+    splashImg,
+    blueberryImg,
+    kiwiImg,
+    mangoImg,
+    strawberryImg
   ];
 
   useEffect(() => {

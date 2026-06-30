@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProductCard from './ProductCard';
+import splashImg from '../assets/03-pulpa-splash.jpg';
+import strawberryImg from '../assets/strawberry.png';
+import mangoImg from '../assets/mango.png';
+import kiwiImg from '../assets/kiwi.png';
+import blueberryImg from '../assets/blueberry.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,7 +68,7 @@ const ProductGrid = () => {
       pack: "6-pack",
       price: "$24",
       desc: "Florida Valencias, ginger, and a dirty splash of lemon. Tastes like the sunrise yelling.",
-      image: "/03-pulpa-splash.jpg",
+      image: splashImg,
       bgColor: "bg-[#FFE6C7]" 
     },
     {
@@ -74,7 +79,7 @@ const ProductGrid = () => {
       pack: "6-pack",
       price: "$26",
       desc: "Fresh strawberries and a hint of mint. A sweet chaos.",
-      image: "/strawberry.png",
+      image: strawberryImg,
       bgColor: "bg-pulpa-hotpink" 
     },
     {
@@ -85,7 +90,7 @@ const ProductGrid = () => {
       pack: "6-pack",
       price: "$28",
       desc: "Pure alphonso mangoes crushed with a spicy kick.",
-      image: "/mango.png",
+      image: mangoImg,
       bgColor: "bg-pulpa-yellow" 
     },
     {
@@ -96,7 +101,7 @@ const ProductGrid = () => {
       pack: "6-pack",
       price: "$24",
       desc: "Tart kiwi blended with lime. The loud healthy option.",
-      image: "/kiwi.png",
+      image: kiwiImg,
       bgColor: "bg-pulpa-mint" 
     },
     {
@@ -107,7 +112,7 @@ const ProductGrid = () => {
       pack: "6-pack",
       price: "$26",
       desc: "Wild blueberries loaded with antioxidants and noise.",
-      image: "/blueberry.png",
+      image: blueberryImg,
       bgColor: "bg-pulpa-periwinkle" 
     }
   ];
